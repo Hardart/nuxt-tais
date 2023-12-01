@@ -31,5 +31,7 @@ export const useMenu = () => {
       isOpen.value = false
     }, 100)
   }
-  return { isOpen, toggleMenuState, onEnterDropbar, onLeaveMenuItem, onLeaveDropbar, onEnterMenuItem }
+
+  const overDropbar = computed(() => isOverDropbar.value)
+  return { isOpen, isOverDropbar, toggleMenuState, onEnterDropbar, onLeaveMenuItem, onLeaveDropbar, onEnterMenuItem }
 }

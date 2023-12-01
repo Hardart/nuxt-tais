@@ -7,5 +7,3 @@ defineProps<{
   components: Component[]
 }>()
 </script>
-
-<style lang="scss"></style>

@@ -13,11 +13,19 @@
       <div class="justify-self-end self-end max-lg:hidden"><UiTaisButton to="/about" text="О нас" /></div>
     </div>
     <div class="grid sm:grid-cols-4 grid-rows-2 gap-4 mt-10">
-      <NuxtPicture class="bg--200 col-span-2 row-span-2" src="/images/home-about-01.jpg" format="webp" width="680" height="680" />
-      <NuxtPicture src="/images/home-about-02.jpg" format="webp" width="330" height="330" quality="70" />
-      <NuxtPicture src="/images/home-about-03.jpg" format="webp" width="330" height="330" quality="70" />
-      <NuxtPicture src="/images/home-about-04.jpg" format="webp" width="330" height="330" quality="70" />
-      <NuxtPicture src="/images/home-about-05.jpg" format="webp" width="330" height="330" quality="70" />
+      <NuxtPicture
+        class="bg--200 col-span-2 row-span-2"
+        src="/images/home-about-01.jpg"
+        format="webp"
+        width="680"
+        height="680"
+        quality="80"
+        loading="lazy"
+      />
+      <NuxtPicture src="/images/home-about-02.jpg" format="webp" width="330" height="330" quality="70" loading="lazy" />
+      <NuxtPicture src="/images/home-about-03.jpg" format="webp" width="330" height="330" quality="70" loading="lazy" />
+      <NuxtPicture src="/images/home-about-04.jpg" format="webp" width="330" height="330" quality="70" loading="lazy" />
+      <NuxtPicture src="/images/home-about-05.jpg" format="webp" width="330" height="330" quality="70" loading="lazy" />
     </div>
   </Section>
 </template>

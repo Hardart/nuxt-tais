@@ -14,7 +14,7 @@
             <NuxtImg src="/shapes/home-shape-01.svg" width="170" height="170" />
           </div>
           <div class="lg:-mr-[40px]">
-            <NuxtPicture src="/images/home-hero.jpeg" format="webp" width="1510" height="885" loading="eager" />
+            <NuxtImg src="/images/home-hero.jpeg" width="1510" height="885" :placeholder="[70, 41, 60, 5]" />
           </div>
         </div>
       </div>

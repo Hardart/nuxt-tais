@@ -9,5 +9,3 @@ defineProps<{
   text: string
 }>()
 </script>
-
-<style lang="scss"></style>

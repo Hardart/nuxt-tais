@@ -7,21 +7,14 @@
           <CardsDescriptionTitle title="Мы полностю нацелены на здоровье вашего тела" size="h2" class="mb-4" />
           <CardsDescriptionText
             class="lg:mb-6"
-            text="
-            Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          "
+            text="Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat."
           />
           <UiTaisButton text="Наша команда" to="/team" />
         </div>
       </div>
       <div class="lg:pl-10 lg:w-2/3 flex-grow">
-        <NuxtPicture src="/images/home-doctors.png" format="webp" width="1270" height="729" />
+        <NuxtPicture src="/images/home-doctors.png" format="webp" width="1270" height="729" loading="lazy" />
       </div>
     </div>
   </Section>
 </template>
-
-<script setup lang="ts"></script>
-
-<style lang="scss"></style>

@@ -1,15 +1,3 @@
-<template>
-  <div
-    class="section bg-cover bg-no-repeat relative"
-    :class="[Color[color || 'default'], PaddingY[padding || 'default']]"
-    :style="[img ? `background-image: url(/images/sections/${img})` : '']"
-  >
-    <Container :class="[expandRight ? 'mr-0 expand-right' : '']">
-      <slot />
-    </Container>
-  </div>
-</template>
-
 <script setup lang="ts">
 enum Color {
   default = 'section-default',
@@ -29,8 +17,22 @@ defineProps<{
   padding?: 'none' | 'small' | 'large'
   img?: string
   expandRight?: boolean
+  noContainer?: boolean
 }>()
 </script>
+
+<template>
+  <div
+    class="section bg-cover bg-no-repeat relative"
+    :class="[Color[color || 'default'], PaddingY[padding || 'default']]"
+    :style="[img ? `background-image: url(/images/sections/${img})` : '']"
+  >
+    <slot v-if="noContainer" />
+    <Container v-else :class="[expandRight ? 'mr-0 expand-right' : '']">
+      <slot />
+    </Container>
+  </div>
+</template>
 
 <style scoped>
 .expand-right {

@@ -3,10 +3,11 @@ const menuData = [
   { title: 'Прайс', href: '/price' },
   { title: 'Услуги', href: '/service' },
   { title: 'О нас', href: '/about' },
+  { title: 'Сотрудники', href: '/doctors' },
   { title: 'Контакты', href: '/contacts' },
   { title: 'Новости', href: '/blog' },
 ]
-const { onLeaveMenuItem, onEnterMenuItem } = useMenu()
+const { onLeaveMenuItem, onEnterMenuItem, isOpen } = useMenu()
 </script>
 <template>
   <div>
@@ -17,8 +18,10 @@ const { onLeaveMenuItem, onEnterMenuItem } = useMenu()
             active-class="active"
             :to="link.href"
             class="relative flex items-center justify-center box-border min-h-[80px] hover:text-green-600 whitespace-nowrap"
+            :class="i == 1 && isOpen && 'hover-item'"
             @mouseenter="i == 1 && onEnterMenuItem()"
             @mouseleave="i == 1 && onLeaveMenuItem()"
+            @click="i == 1 && onLeaveMenuItem()"
           >
             {{ link.title }}
           </NuxtLink>
@@ -44,6 +47,7 @@ a::before {
   right: 50%;
   left: 50%;
 }
+a.hover-item::before,
 a:hover::before,
 a.active::before {
   left: 0;
