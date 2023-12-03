@@ -1,8 +1,8 @@
 <template>
-  <div v-if="!href" class="max-lg:text-center mb-6 text-emerald-600 uppercase tracking-wide text-sm">
+  <div v-if="!href" class="max-lg:text-center text-emerald-600 uppercase tracking-wide text-sm">
     {{ text }}
   </div>
-  <NuxtLink :to="href" v-else class="relative max-lg:text-center mb-6 text-emerald-600 uppercase tracking-wide text-sm">{{ text }}</NuxtLink>
+  <NuxtLink :to="href" v-else class="relative max-lg:text-center text-emerald-600 uppercase tracking-wide text-sm">{{ text }}</NuxtLink>
 </template>
 
 <script setup lang="ts">

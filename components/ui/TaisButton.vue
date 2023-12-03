@@ -6,9 +6,11 @@
     :class="[size == 'sm' && 'px-3 pt-1 pb-1.5']"
     >{{ text }}</NuxtLink
   >
-  <button v-else class="bg-green-600 text-white px-8 leading-[48px] rounded-3xl hovered" :class="[size == 'sm' && 'px-3 pt-1 pb-1.5']">
-    {{ text }}
-  </button>
+  <div v-else>
+    <button class="bg-green-600 text-white px-8 leading-[48px] rounded-3xl hovered" :class="[size == 'sm' && 'px-3 pt-1 pb-1.5']">
+      {{ text }}
+    </button>
+  </div>
 </template>
 
 <script setup lang="ts">

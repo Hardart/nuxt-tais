@@ -1,21 +1,13 @@
 <template>
   <Section padding="large">
-    <div class="flex flex-wrap max-lg:space-y-8 max-lg:justify-center">
-      <div class="max-lg:text-center max-lg:px-10 lg:w-1/3 lg:pr-10">
-        <CardsDescriptionSection type="text" text="Для наших клиентов" />
-        <CardsDescriptionTitle class="mb-6" size="h2" title="Your Benefits" />
-        <CardsDescriptionText text="Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt." />
-      </div>
-      <div class="lg:w-2/3 grid md:grid-cols-2 md:grid-rows-2 gap-8 lg:gap-14">
-        <div class="flex max-md:flex-col max-md:items-center" v-for="item in benefitData">
-          <div class="min-w-[40px]">
-            <NuxtImg src="/icons/icon-check.svg" width="40" height="40" />
-          </div>
-          <div class="md:pl-4 max-md:text-center max-md:pt-4">
-            <h3 class="text-xl md:text-2xl lg:text-3xl mb-3 lg:mb-6">{{ item.title }}</h3>
-            <p class="font-light leading-6 lg:leading-7">{{ item.text }}</p>
-          </div>
-        </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-12 max-lg:justify-center">
+      <CardsDescription
+        section-title="Для наших клиентов"
+        title="Your Benefits"
+        text="Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt."
+      />
+      <div class="grid md:grid-cols-2 md:grid-rows-2 lg:col-span-2 max-md:space-y-8 md:gap-10">
+        <CardsBenefitsList :benefitList="benefitData" />
       </div>
     </div>
     <NuxtImg class="absolute -top-[30px] left-0" src="/shapes/home-shape-03.svg" width="540" height="800" loading="lazy" />

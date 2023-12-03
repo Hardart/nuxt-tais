@@ -9,10 +9,10 @@
 withDefaults(
   defineProps<{
     title: string
-    size?: 'h1' | 'h2' | 'h3' | 'h4'
+    size?: string
   }>(),
   {
-    size: 'h1',
+    size: 'h3',
   }
 )
 </script>

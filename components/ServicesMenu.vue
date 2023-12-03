@@ -1,43 +1,34 @@
 <script lang="ts" setup>
-const serviceData = [
-  { title: 'Акне', icon: 'general-dentistry' },
-  { title: 'Чистка лица', icon: 'tooth-shine' },
-  { title: 'Коррекция фигуры', icon: 'brush' },
-  { title: 'Устранение морщин', icon: 'implant-dentistry' },
-  { title: 'Очищение организма', icon: 'tooth-stroke' },
-  { title: 'Акции', icon: 'endodontics' },
-]
+const service = inject<IMainPageData>('service')
+if (!service) throw createError('MainPageData undefined!')
 
-const { isOpen, onEnterDropbar, onLeaveDropbar } = useMenu()
+const { isOpen, mainMenu } = useMenu()
 </script>
 
 <template>
-  <TransitionExpand :no-opacity="true">
+  <TransitionExpand easing="cubic-bezier(0.22, 1, 0.36, 1)" :duration="400" no-opacity mode="out-in">
     <div
-      ref="dropdown"
-      class="absolute left-0 w-full transform px-4 sm:px-0 bg-sky-800 z-50"
+      class="absolute left-0 w-full px-4 sm:px-0 bg-sky-800 z-50"
       v-if="isOpen"
-      @mouseenter="onEnterDropbar"
-      @mouseleave="onLeaveDropbar"
+      @mouseenter="mainMenu.open($event.target as HTMLElement)"
+      @mouseleave="mainMenu.close()"
+      :data-menu="'service'"
     >
       <Container>
-        <ul
-          ref="menu"
-          class="grid grid-flow-col grid-cols-3 xl:grid-cols-4 grid-rows-4 gap-x-2 gap-y-6 py-10 duration-500 transition-opacity"
-        >
-          <li class="hover:bg-sky-400/10 cursor-pointer py-2 px-3 rounded-md group" v-for="{ icon, title } in serviceData">
+        <ul class="grid grid-flow-col grid-cols-3 xl:grid-cols-3 grid-rows-5 gap-x-2 gap-y-6 py-8">
+          <li class="hover:bg-sky-400/10 cursor-pointer py-2 px-3 rounded-md group" v-for="{ icon, title } in service.list">
             <div class="flex gap-x-2">
               <NuxtImg class="opacity-50 group-hover:opacity-100" :src="`/icons/icon-services-${icon}.svg`" width="40" height="40" />
               <div>
-                <h3 class="text-xl font-medium text-white">{{ title }}</h3>
+                <h3 class="text-lg font-medium text-white">{{ title }}</h3>
                 <p class="text-sm text-white/50 group-hover:text-white">Lorem ipsum dolor sit amet consectetur</p>
               </div>
             </div>
           </li>
-          <li class="row-span-4 justify-self-end">
-            <CardsEmployeeImage :width="250" :height="300" image="01" class="rounded-lg" />
-            <p class="text-neutral-100 mt-3 mb-0.5">Для консультации просто</p>
-            <UiTaisButton size="sm" text="свяжитесь с нами" to="/contacts" @click="onLeaveDropbar" />
+          <li class="row-span-4 ml-auto">
+            <CardsEmployeeImage :width="200" :height="210" image="01" class="rounded-lg" />
+            <p class="text-neutral-100 mt-3">Для консультации просто</p>
+            <UiTaisButton size="sm" text="свяжитесь с нами" to="/contacts" @click="mainMenu.close()" />
           </li>
         </ul>
       </Container>

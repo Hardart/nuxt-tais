@@ -3,7 +3,7 @@
     <div class="flex">
       <div class="md:w-2/5">
         <CardsDescriptionSection text="Как добраться" />
-        <CardsDescriptionTitle title="We Look Forward to Welcoming You in Our Practice" size="h2" class="mb-6" />
+        <CardsDescriptionTitle title="We Look Forward to Welcoming You in Our Practice" size="h3" class="mb-6" />
         <CardsDescriptionText
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
           class="mb-6"

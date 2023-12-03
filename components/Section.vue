@@ -12,23 +12,31 @@ enum PaddingY {
   small = 'py-4 md:py-6 lg:py-8',
   none = '',
 }
-defineProps<{
-  color?: 'primary' | 'secondary' | 'muted'
-  padding?: 'none' | 'small' | 'large'
-  img?: string
-  expandRight?: boolean
-  noContainer?: boolean
-}>()
+withDefaults(
+  defineProps<{
+    color?: 'primary' | 'secondary' | 'muted'
+    padding?: 'none' | 'small' | 'large'
+    img?: string
+    expand?: boolean
+    expandRight?: boolean
+    noContainer?: boolean
+    paddingTopRemove?: boolean
+  }>(),
+  {
+    expand: false,
+    paddingTopRemove: false,
+  }
+)
 </script>
 
 <template>
   <div
     class="section bg-cover bg-no-repeat relative"
-    :class="[Color[color || 'default'], PaddingY[padding || 'default']]"
+    :class="[Color[color || 'default'], PaddingY[padding || 'default'], paddingTopRemove && '!pt-0']"
     :style="[img ? `background-image: url(/images/sections/${img})` : '']"
   >
     <slot v-if="noContainer" />
-    <Container v-else :class="[expandRight ? 'mr-0 expand-right' : '']">
+    <Container v-else :class="[expandRight && 'mr-0 expand-right']" :expand="expand">
       <slot />
     </Container>
   </div>

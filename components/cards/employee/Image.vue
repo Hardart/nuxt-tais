@@ -6,16 +6,7 @@ defineProps<{
 }>()
 </script>
 <template>
-  <div class="overflow-hidden">
-    <NuxtImg
-      :src="`images/doctors/${image}.webp`"
-      :width="width"
-      :height="height"
-      loading="lazy"
-      fit="cover"
-      :placeholder="[50, 63, 60, 15]"
-    />
-  </div>
+  <NuxtImg :src="`images/doctors/${image}.webp`" :width="width" :height="height" preload />
 </template>
 
 <style></style>

@@ -9,17 +9,19 @@ const personal = [
 
 <template>
   <Section no-container padding="small">
-    <div class="flex justify-between items-center px-10">
-      <div>
-        <NuxtImg src="shapes/hero-shape-01.svg" width="500" />
+    <div class="flex items-center px-10 space-x-10">
+      <div class="flex-1 max-xl:hidden">
+        <NuxtImg src="shapes/hero-shape-01.svg" width="750" height="600" />
       </div>
-      <div class="text-center w-2/5">
+      <div class="text-center w-full xl:w-2/5">
         <CardsDescriptionSection text="doctors" />
         <CardsDescriptionTitle title="Meet The Medical Team" class="mb-8 font-semibold" size="h2" />
-        <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <p class="text-2xl max-w-2xl mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+        </p>
       </div>
-      <div>
-        <NuxtImg src="shapes/hero-shape-02.svg" width="500" />
+      <div class="flex-1 max-xl:hidden">
+        <NuxtImg src="shapes/hero-shape-02.svg" width="750" height="600" />
       </div>
     </div>
   </Section>
@@ -34,6 +36,12 @@ const personal = [
       />
     </div>
   </Section>
+  <SectionsSimpleWithBg
+    title="Find Out More About Our Practice"
+    image="doctors.webp"
+    text="Meet the team and explore our practice."
+    btn-text="О нас"
+  />
 </template>
 
 <style></style>

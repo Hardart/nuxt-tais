@@ -1,9 +1,12 @@
+<script setup lang="ts">
+defineProps<{
+  expand?: boolean
+}>()
+</script>
 <template>
-  <div class="max-w-[1360px] px-5 md:px-8 lg:px-10 mx-auto box-content">
+  <div class="px-5 md:px-8 lg:px-10 mx-auto box-content" :class="[expand ? 'max-w-full' : 'max-w-[1360px]']">
     <slot />
   </div>
 </template>
-
-<script setup lang="ts"></script>
 
 <style lang="scss"></style>

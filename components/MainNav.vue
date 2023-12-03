@@ -7,7 +7,7 @@ const menuData = [
   { title: 'Контакты', href: '/contacts' },
   { title: 'Новости', href: '/blog' },
 ]
-const { onLeaveMenuItem, onEnterMenuItem, isOpen } = useMenu()
+const { mainMenu } = useMenu()
 </script>
 <template>
   <div>
@@ -18,10 +18,10 @@ const { onLeaveMenuItem, onEnterMenuItem, isOpen } = useMenu()
             active-class="active"
             :to="link.href"
             class="relative flex items-center justify-center box-border min-h-[80px] hover:text-green-600 whitespace-nowrap"
-            :class="i == 1 && isOpen && 'hover-item'"
-            @mouseenter="i == 1 && onEnterMenuItem()"
-            @mouseleave="i == 1 && onLeaveMenuItem()"
-            @click="i == 1 && onLeaveMenuItem()"
+            @mouseenter="mainMenu.open($event.target)"
+            @mouseleave="mainMenu.close()"
+            @click="mainMenu.close()"
+            :data-menu="i == 1 && 'service'"
           >
             {{ link.title }}
           </NuxtLink>
