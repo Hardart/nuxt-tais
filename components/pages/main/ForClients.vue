@@ -10,7 +10,7 @@
         <CardsBenefitsList :benefitList="benefitData" />
       </div>
     </div>
-    <img class="absolute -top-[30px] left-0" src="/shapes/home-shape-03.svg" width="540" height="800" loading="lazy" />
+    <img class="absolute -top-[30px] left-0" src="/images/shapes/home-shape-03.svg" width="540" height="800" loading="lazy" />
   </Section>
 </template>
 

@@ -11,7 +11,7 @@ const personal = [
   <Section no-container padding="small">
     <div class="flex items-center px-10 space-x-10">
       <div class="flex-1 max-xl:hidden">
-        <img src="shapes/hero-shape-01.svg" width="750" height="600" />
+        <img src="/images/shapes/hero-shape-01.svg" width="750" height="600" />
       </div>
       <div class="text-center w-full xl:w-2/5">
         <CardsDescriptionSection text="doctors" />
@@ -21,7 +21,7 @@ const personal = [
         </p>
       </div>
       <div class="flex-1 max-xl:hidden">
-        <img src="shapes/hero-shape-02.svg" width="750" height="600" />
+        <img src="/images/shapes/hero-shape-02.svg" width="750" height="600" />
       </div>
     </div>
   </Section>

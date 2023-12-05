@@ -1,6 +1,6 @@
 <template>
   <Section padding="large">
-    <img class="absolute -top-[30px] left-0" src="/shapes/home-shape-03.svg" width="540" height="800" loading="lazy" />
+    <img class="absolute -top-[30px] left-0" src="/images/shapes/home-shape-03.svg" width="540" height="800" loading="lazy" />
     <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-12 max-lg:justify-center">
       <div class="lg:max-w-xs">
         <CardsDescription section-title="почему выбирают нас" title="We Are Union Dental, and Your Smile Is Our Mission" />
