@@ -44,7 +44,7 @@ const team = [
 
 <template>
   <Section>
-    <div class="mb-10 text-center">
+    <div class="mb-10 text-center lg:max-w-3xl lg:mx-auto">
       <CardsDescription
         section-title="our professionals"
         title="Meet the Team"

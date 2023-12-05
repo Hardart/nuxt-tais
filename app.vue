@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const { service } = useService()
-provide('service', service)
+const { settings } = await useSettings()
+
+provide('settings', settings)
 </script>
 <template>
   <div>

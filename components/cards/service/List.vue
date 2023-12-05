@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 defineProps<{
-  serviceData: IServiceData[]
+  serviceData: IService[]
   showCount?: number
   showDesc?: boolean
 }>()

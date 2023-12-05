@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const service = inject<IMainPageData>('service')
-if (!service) throw createError('MainPageData undefined!')
+const settings = inject<Ref<IAppSetting>>('settings')
+if (!settings?.value) throw createError('MainPageData undefined!')
+const service = settings.value.service
 </script>
 <template>
   <Section padding="large" padding-top-remove>

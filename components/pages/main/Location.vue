@@ -2,7 +2,7 @@
 <template>
   <Section padding="large" class="!pt-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-10 xl:gap-x-20">
-      <div class="h-96 max-w-full">
+      <div class="h-96 w-full">
         <YaMap class="h-full" />
       </div>
       <div class="grid sm:grid-flow-col grid-cols-1 sm:grid-cols-2 max-lg:gap-x-10 gap-x-2 py-5 max-sm:text-center">

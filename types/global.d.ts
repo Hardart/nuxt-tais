@@ -17,7 +17,7 @@ declare global {
     type: 'text'
   }
 
-  interface IServiceData {
+  interface IService {
     title: string
     icon: string
     procedures: string[] | null
@@ -29,13 +29,23 @@ declare global {
     subTitle?: string
   }
 
-  interface IMainPageData {
-    list: IServiceData[]
+  interface IServiceData {
+    list: IService[]
     desc: IDescCard
+  }
+
+  interface IAppSetting {
+    service: IServiceData
+    mainMenu: IMainMenu[]
   }
 
   interface IBenefit {
     title: string
     text: string
+  }
+
+  interface IMainMenu {
+    title: string
+    href: string
   }
 }

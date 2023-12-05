@@ -1,12 +1,8 @@
 <script setup lang="ts">
-const menuData = [
-  { title: 'Прайс', href: '/price' },
-  { title: 'Услуги', href: '/service' },
-  { title: 'О нас', href: '/about' },
-  { title: 'Сотрудники', href: '/doctors' },
-  { title: 'Контакты', href: '/contacts' },
-  { title: 'Новости', href: '/blog' },
-]
+const settings = inject<Ref<IAppSetting>>('settings')
+if (!settings?.value) throw createError('MainPageData undefined!')
+const menuData = settings.value.mainMenu
+
 const { mainMenu } = useMenu()
 </script>
 <template>

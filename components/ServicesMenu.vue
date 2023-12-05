@@ -1,6 +1,8 @@
 <script lang="ts" setup>
-const service = inject<IMainPageData>('service')
-if (!service) throw createError('MainPageData undefined!')
+const settings = inject<Ref<IAppSetting>>('settings')
+if (!settings) throw createError('MainPageData undefined!')
+
+const { service } = settings.value
 
 const { isOpen, mainMenu } = useMenu()
 </script>
