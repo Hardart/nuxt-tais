@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { settings } = await useSettings()
-
 provide('settings', settings)
 </script>
 <template>

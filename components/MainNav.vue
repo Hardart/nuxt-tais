@@ -4,6 +4,10 @@ if (!settings?.value) throw createError('MainPageData undefined!')
 const menuData = settings.value.mainMenu
 
 const { mainMenu } = useMenu()
+onMounted(() => {
+  const image = new Image()
+  image.src = 'http://37.220.86.111/images/doctors/01.webp'
+})
 </script>
 <template>
   <div>
