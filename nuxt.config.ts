@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      link: [{ href: '/css/uikit.lightbox.css', rel: 'stylesheet' }],
       script: [{ src: '/js/uikit.min.js', defer: true }],
     },
   },
@@ -12,7 +11,7 @@ export default defineNuxtConfig({
     '/about': { prerender: true },
     '/contacts': { prerender: true },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', 'nuxt-icon', 'nuxt-delay-hydration', '@morev/vue-transitions/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', 'nuxt-delay-hydration', '@morev/vue-transitions/nuxt'],
 
   delayHydration: {
     // enables nuxt-delay-hydration in dev mode for testing

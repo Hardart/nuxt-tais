@@ -6,7 +6,7 @@ defineProps<{
 }>()
 </script>
 <template>
-  <NuxtImg :src="`images/doctors/${image}.webp`" :width="width" :height="height" preload />
+  <img :src="`images/doctors/${image}.webp`" :width="width" :height="height" loading="lazy" />
 </template>
 
 <style></style>

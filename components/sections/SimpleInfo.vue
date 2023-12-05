@@ -12,7 +12,7 @@
       </div>
       <div class="max-md:hidden md:w-3/5">
         <div class="absolute right-0 bottom-0">
-          <NuxtImg src="/shapes/home-shape-04.svg" width="510" height="355" loading="lazy" />
+          <img src="/shapes/home-shape-04.svg" width="510" height="355" loading="lazy" />
         </div>
       </div>
     </div>

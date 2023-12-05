@@ -18,7 +18,7 @@ const { isOpen, mainMenu } = useMenu()
         <ul class="grid grid-flow-col grid-cols-3 xl:grid-cols-3 grid-rows-5 gap-x-2 gap-y-6 py-8">
           <li class="hover:bg-sky-400/10 cursor-pointer py-2 px-3 rounded-md group" v-for="{ icon, title } in service.list">
             <div class="flex gap-x-2">
-              <NuxtImg class="opacity-50 group-hover:opacity-100" :src="`/icons/icon-services-${icon}.svg`" width="40" height="40" />
+              <img class="opacity-50 group-hover:opacity-100" :src="`/icons/icon-services-${icon}.svg`" width="40" height="40" />
               <div>
                 <h3 class="text-lg font-medium text-white">{{ title }}</h3>
                 <p class="text-sm text-white/50 group-hover:text-white">Lorem ipsum dolor sit amet consectetur</p>

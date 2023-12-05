@@ -21,7 +21,7 @@ if (!service) throw createError('MainPageData undefined!')
       </DelayHydration>
     </div>
     <div class="absolute left-0 -bottom-[140px] max-2xl:hidden">
-      <NuxtImg src="/shapes/home-shape-02.svg" width="165" height="330" loading="lazy" />
+      <img src="/shapes/home-shape-02.svg" width="165" height="330" loading="lazy" />
     </div>
   </Section>
 </template>

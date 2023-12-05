@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="lg:pl-10 lg:w-2/3 flex-grow">
-        <NuxtPicture src="/images/home-doctors.png" format="webp" width="1270" height="729" loading="lazy" />
+        <img src="/images/home-doctors.png" width="1270" height="729" loading="lazy" />
       </div>
     </div>
   </Section>
