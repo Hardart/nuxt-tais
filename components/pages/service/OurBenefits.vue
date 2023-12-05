@@ -1,5 +1,8 @@
 <template>
   <Section padding="large">
+    <div class="text-center mb-20">
+      <CardsDescription title="We've Got the Right Treatment for You" sectionTitle="what sets us apart" />
+    </div>
     <div class="grid md:grid-cols-2 xl:grid-cols-3 max-md:space-y-8 md:gap-10">
       <CardsBenefitsList :benefitList="benefitData" />
     </div>

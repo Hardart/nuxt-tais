@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
+
 <template>
   <Section>
-    <NuxtImg src="http://localhost:3000/assets/images/1.jpg" />
+    <UkSlideshow />
   </Section>
-  <Dropdown />
 </template>
+
+<style></style>

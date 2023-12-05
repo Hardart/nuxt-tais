@@ -1,8 +1,9 @@
 <script setup lang="ts"></script>
 <template>
-  <Section>
-    <UkLightbox />
-  </Section>
+  <PagesAboutUsHero />
+  <PagesAboutUsMeetTeem />
+  <PagesAboutUsOurMission />
+  <PagesAboutUsGallery />
 </template>
 
 <style></style>

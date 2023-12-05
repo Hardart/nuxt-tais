@@ -3,7 +3,7 @@ defineProps(['text'])
 </script>
 
 <template>
-  <p class="font-light leading-6 lg:leading-7">{{ text }}</p>
+  <p class="font-light text-lg leading-6">{{ text }}</p>
 </template>
 
 <style></style>
