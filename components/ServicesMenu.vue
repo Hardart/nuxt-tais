@@ -6,7 +6,7 @@ const { isOpen, mainMenu } = useMenu()
 </script>
 
 <template>
-  <TransitionExpand easing="cubic-bezier(0.22, 1, 0.36, 1)" :duration="400" no-opacity mode="in-out">
+  <TransitionFade easing="cubic-bezier(0.22, 1, 0.36, 1)" :duration="400" no-opacity mode="in-out">
     <div
       class="absolute left-0 w-full px-4 sm:px-0 bg-gradient-to-br from-sky-800 from-40% to-cyan-600 z-50"
       v-if="isOpen"
@@ -33,7 +33,7 @@ const { isOpen, mainMenu } = useMenu()
         </ul>
       </Container>
     </div>
-  </TransitionExpand>
+  </TransitionFade>
 </template>
 
 <style scoped></style>

@@ -1,7 +1,7 @@
 <template>
   <Section padding="large">
-    <ImagesDecorateShape image="blue-circle" class="right-10 -top-20" />
-    <ImagesDecorateShape image="dark-blue-half-circle" class="-right-4 top-32" />
+    <ImagesDecorateShape image="blue-circle" class="right-5 xl:right-10 -top-20 max-lg:hidden" />
+    <ImagesDecorateShape image="dark-blue-half-circle" class="right-0 top-32 max-xl:hidden" />
     <div class="text-center mb-20">
       <CardsDescription title="We've Got the Right Treatment for You" sectionTitle="what sets us apart" />
     </div>

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 defineProps<{
   image: string
-  width: number
-  height: number
+  width?: number
+  height?: number
 }>()
 </script>
 <template>

@@ -30,7 +30,7 @@ withDefaults(
 </script>
 
 <template>
-  <div
+  <section
     class="section bg-cover bg-no-repeat relative"
     :class="[Color[color || 'default'], PaddingY[padding || 'default'], paddingTopRemove && '!pt-0']"
     :style="[img ? `background-image: url(/images/sections/${img})` : '']"
@@ -39,7 +39,7 @@ withDefaults(
     <Container v-else :class="[expandRight && 'mr-0 expand-right']" :expand="expand">
       <slot />
     </Container>
-  </div>
+  </section>
 </template>
 
 <style scoped>
