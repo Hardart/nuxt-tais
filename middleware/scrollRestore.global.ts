@@ -13,6 +13,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
     // and restore auto scrollRestoration when leaving the page
 
     window.addEventListener('unload', scrollRestore)
+    window.removeEventListener('unload', scrollRestore)
   }
 
   function scrollRestore() {

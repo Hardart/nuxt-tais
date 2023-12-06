@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 @layer components {
+  .blog-card {
+    @apply relative flex flex-col w-full max-sm:even:bg-slate-200/20 lg:even:bg-slate-200/20;
+  }
+  .blog-card:nth-child(4n + 3),
+  .blog-card:nth-child(4n + 2) {
+    @apply sm:max-lg:bg-slate-200/20;
+  }
+
+  .blog-card a {
+    @apply after:content-[''] after:absolute after:inset-0;
+  }
+
   .hovered {
     background-position: 0% 100%;
     background-size: 0%;
@@ -14,10 +26,15 @@
   }
 
   div.hovered {
-    background-image: radial-gradient(circle at 0% 100%, theme(colors.stone.200) 0%, transparent 1%);
+    background-image: radial-gradient(circle at 0% 0%, theme(colors.yellow.200) 0%, transparent 1%);
+  }
+
+  .blog-card.hovered {
+    transition-duration: 0.5s;
+    background-image: radial-gradient(circle at 0% 105%, theme(colors.green.200) 0%, transparent 1.2%);
   }
 
   .hovered:hover {
-    background-size: 10000%;
+    background-size: 12000%;
   }
 }

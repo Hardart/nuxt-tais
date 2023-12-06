@@ -4,10 +4,6 @@ if (!settings?.value) throw createError('MainPageData undefined!')
 const menuData = settings.value.mainMenu
 
 const { mainMenu } = useMenu()
-onMounted(() => {
-  const image = new Image()
-  image.src = 'http://37.220.86.111/images/doctors/01.webp'
-})
 </script>
 <template>
   <div>
@@ -18,6 +14,7 @@ onMounted(() => {
             active-class="active"
             :to="link.href"
             class="relative flex items-center justify-center box-border min-h-[80px] hover:text-green-600 whitespace-nowrap"
+            :class="$route.path.includes(link.href + '/') && 'active'"
             @mouseenter="mainMenu.open($event.target)"
             @mouseleave="mainMenu.close()"
             @click="mainMenu.close()"
