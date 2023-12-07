@@ -2,5 +2,6 @@
 <template>
   <PagesNewsHero />
   <PagesNewsList />
+
   <PagesMainSimpleWithBg />
 </template>
