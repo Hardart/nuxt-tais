@@ -4,7 +4,7 @@
   <Section no-container padding="none" class="py-8 max-xl:pb-0">
     <div class="flex items-center px-10 xl:space-x-10">
       <div class="flex-1 max-xl:hidden">
-        <img src="/images/shapes/hero-shape-01.svg" width="750" height="600" />
+        <img src="./images/shapes/hero-shape-01.svg" width="750" height="600" />
       </div>
       <div class="text-center w-full xl:w-2/5 space-y-4 lg:space-y-6 xl:space-y-8">
         <CardsDescriptionSection text="наш блог" />
@@ -14,7 +14,7 @@
         </p>
       </div>
       <div class="flex-1 max-xl:hidden">
-        <img src="/images/shapes/hero-shape-02.svg" width="750" height="600" />
+        <img src="./images/shapes/hero-shape-02.svg" width="750" height="600" />
       </div>
     </div>
   </Section>
