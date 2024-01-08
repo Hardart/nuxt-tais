@@ -6,7 +6,7 @@ withDefaults(
     shapeTitle: string
     width: string | number
     height: string | number
-    imgClass?: string
+    shapeClass?: string
     wrapClass?: string
     loading?: 'lazy' | 'eager'
   }>(),
@@ -20,7 +20,7 @@ withDefaults(
 
 <template>
   <div :class="wrapClass">
-    <img :class="imgClass" :src="`/images/shapes/${shapeTitle}.svg`" :width="width" :height="height" :loading="loading" />
+    <img :class="shapeClass" :src="`/images/shapes/${shapeTitle}.svg`" :width="width" :height="height" :loading="loading" />
   </div>
 </template>
 

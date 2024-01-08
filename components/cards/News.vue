@@ -6,17 +6,10 @@ defineProps(['newsCard'])
   <article class="blog-card group">
     <!-- CARD HEADER -->
     <div class="relative">
-      <img
-        v-if="newsCard.image"
-        :src="`http://37.220.86.111/images/blog/blog-post-${newsCard.image}.webp`"
-        width="610"
-        height="357"
-        alt=""
-        loading="lazy"
-      />
+      <img v-if="newsCard.image" :src="`/images/blog/blog-post-${newsCard.image}.webp`" width="610" height="357" alt="" loading="lazy" />
       <div v-else class="bg-sky-500 flex justify-center items-center uppercase font-bold tracking-widest text-white">
         <div class="absolute">no image</div>
-        <img src="/images/shapes/placeholder.svg" width="610" height="357" class="bg-slate-100" alt="" />
+        <ImagesShape shape-title="placeholder" shape-class="bg-slate-100" width="610" height="357" loading="lazy" />
       </div>
       <div class="bg-stone-500/30 group-hover:bg-transparent transition-colors absolute inset-0"></div>
     </div>
@@ -31,5 +24,3 @@ defineProps(['newsCard'])
     </div>
   </article>
 </template>
-
-<style></style>
