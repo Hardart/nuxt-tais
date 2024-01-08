@@ -32,7 +32,7 @@ const toggleItemState = (i: number) => {
         <div>
           <Icon
             name="heroicons:arrow-down"
-            class="transition-transform ease-in-out duration-300"
+            class="transition-transform ease-in-out duration-300 mx-3"
             :class="itemsState[index] && 'rotate-180'"
           />
         </div>

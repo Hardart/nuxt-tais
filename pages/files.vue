@@ -9,5 +9,3 @@ const { data: images } = await useFetch('/api/files')
     </ul>
   </Section>
 </template>
-
-<style scoped></style>

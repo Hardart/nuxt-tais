@@ -8,6 +8,6 @@ function foldersMap(path: string): string[] {
   return files.flatMap(f => {
     const fullPath = path + f
     if (fs.lstatSync(fullPath).isDirectory()) return foldersMap(fullPath + '/')
-    return fullPath.replace(/^../, 'http://37.220.86.111')
+    return fullPath.replace(/^..\/assets/, '')
   })
 }

@@ -2,8 +2,8 @@
 withDefaults(
   defineProps<{
     shapeTitle: string
-    width: string | number
-    height: string | number
+    width?: string | number
+    height?: string | number
     shapeClass?: string
     wrapClass?: string
     loading?: 'lazy' | 'eager'

@@ -21,7 +21,7 @@ const benefitData = [
 
 <template>
   <Section padding="large">
-    <ImagesShape shape-title="home-shape-03" wrap-class="absolute -top-[30px] left-0" width="540" height="800" loading="lazy" />
+    <ImagesShape shape-title="home-shape-03" wrap-class="absolute -top-0 left-0" width="340" height="300" loading="lazy" />
     <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-12 max-lg:justify-center">
       <div class="lg:max-w-xs">
         <CardsDescription section-title="почему выбирают нас" title="We Are Union Dental, and Your Smile Is Our Mission" />

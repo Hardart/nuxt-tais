@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  link: [{ href: '/css/uikit.lightbox.css', rel: 'stylesheet' }],
+})
+</script>
 <template>
   <PagesMainHero />
   <PagesMainOurService />
