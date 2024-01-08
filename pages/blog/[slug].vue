@@ -16,7 +16,7 @@ const params = useRoute().params
         <div class="mt-10 md:mt-20">
           <div class="w-full transition-opacity duration-500">
             <img
-              :src="`http://37.220.86.111/images/blog/blog-post-${params.slug}-big.webp`"
+              :src="`/images/blog/blog-post-${params.slug}-big.webp`"
               width="1200"
               height="700"
               :alt="(params.slug as string)"
@@ -54,7 +54,7 @@ const params = useRoute().params
           in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <p>
-          <img class="!my-12" src="http://37.220.86.111/images/blog/blog-post-1111-1.jpg" width="750" height="440" alt="" />
+          <img class="!my-12" src="/images/blog/blog-post-1111-1.jpg" width="750" height="440" alt="" />
         </p>
         <p class="text-neutral-600 text-lg font-light">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

@@ -3,7 +3,7 @@ const { settings } = await useSettings()
 provide('settings', settings)
 onMounted(() => {
   const image = new Image()
-  image.src = 'http://37.220.86.111/images/doctors/01.webp'
+  image.src = '/images/doctors/01.webp'
 })
 </script>
 <template>
