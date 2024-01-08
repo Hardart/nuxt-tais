@@ -1,3 +1,6 @@
+<script lang="ts" setup>
+const imgUrl = '/images/home-doctors.png'
+</script>
 <template>
   <Section padding="large" :expand-right="true">
     <div class="flex flex-wrap">
@@ -14,7 +17,7 @@
         </div>
       </div>
       <div class="lg:pl-10 lg:w-2/3 flex-grow">
-        <img src="/images/home-doctors.png" width="1270" height="729" loading="lazy" />
+        <img :src="imgUrl" width="1270" height="729" loading="lazy" />
       </div>
     </div>
   </Section>
