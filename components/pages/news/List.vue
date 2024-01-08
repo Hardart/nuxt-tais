@@ -1,20 +1,9 @@
 <script setup lang="ts">
 defineProps(['news'])
 const route = useRoute()
-const queryPage = Number(route.query.page)
-const page = ref(queryPage || 1)
+const pageQuery = () => Number(route.query.page) || 1
+const page = ref(pageQuery())
 const perPage = 6
-function watchParams() {
-  watch(
-    () => route.query,
-    () => {
-      filterNews.value = sliceNews()
-    }
-  )
-}
-
-watchParams()
-
 const news = [
   {
     date: 'JULY 28, 2021',
@@ -125,6 +114,15 @@ const news = [
     link: 'baby-teeth-right-dental-care-from-the-beginning',
   },
 ]
+
+watch(
+  () => route.query,
+  () => {
+    page.value = pageQuery()
+    filterNews.value = sliceNews()
+  }
+)
+
 const filterNews = ref(sliceNews())
 
 function sliceNews() {
