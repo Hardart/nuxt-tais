@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const params = useRoute().params
+const newsImg = '/images/blog/blog-post-1111-1.jpg'
 </script>
 
 <template>
@@ -54,7 +55,7 @@ const params = useRoute().params
           in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <p>
-          <img class="!my-12" src="/images/blog/blog-post-1111-1.jpg" width="750" height="440" alt="" />
+          <img class="!my-12" :src="newsImg" width="750" height="440" alt="" />
         </p>
         <p class="text-neutral-600 text-lg font-light">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
