@@ -10,7 +10,7 @@ defineProps<{
       <img src="/images/shapes/home-shape-01.svg" width="170" height="170" />
     </div>
     <div class="lg:-mr-[40px]">
-      <img :src="`http://37.220.86.111/images/${image}`" width="1510" height="885" loading="eager" fetchpriority="high" decoding="async" />
+      <img :src="`/images/${image}`" width="1510" height="885" loading="eager" fetchpriority="high" decoding="async" />
     </div>
   </div>
 </template>

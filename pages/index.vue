@@ -8,6 +8,4 @@
   <PagesMainSimpleInfo />
   <PagesMainLocation />
   <PagesMainSimpleWithBg />
-
-  />
 </template>
