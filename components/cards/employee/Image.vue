@@ -6,7 +6,7 @@ defineProps<{
 }>()
 </script>
 <template>
-  <img :src="`images/doctors/${image}.webp`" :width="width" :height="height" loading="lazy" />
+  <img :src="`/images/doctors/${image}.webp`" :width="width" :height="height" loading="lazy" />
 </template>
 
 <style></style>

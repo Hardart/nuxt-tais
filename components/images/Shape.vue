@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { ImgHTMLAttributes } from 'nuxt/dist/app/compat/capi'
-
 withDefaults(
   defineProps<{
     shapeTitle: string
