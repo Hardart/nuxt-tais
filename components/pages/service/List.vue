@@ -12,5 +12,3 @@ const { service } = settings.value
     </div>
   </Section>
 </template>
-
-<style></style>

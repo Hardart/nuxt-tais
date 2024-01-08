@@ -3,6 +3,7 @@ const settings = inject<Ref<IAppSetting>>('settings')
 if (!settings) throw createError('MainPageData undefined!')
 const { service } = settings.value
 const { isOpen, mainMenu } = useMenu()
+const doctorImg = '/images/doctors/01.webp'
 </script>
 
 <template>
@@ -26,7 +27,7 @@ const { isOpen, mainMenu } = useMenu()
             </div>
           </li>
           <li class="row-span-4 ml-auto">
-            <img class="rounded-lg shadow-lg" src="http://37.220.86.111/images/doctors/01.webp" width="190" height="200" />
+            <img class="rounded-lg shadow-lg" :src="doctorImg" width="190" height="200" />
             <p class="text-neutral-100 mt-3">Для консультации просто</p>
             <UiTaisButton size="sm" text="свяжитесь с нами" to="/contacts" @click="mainMenu.close()" />
           </li>

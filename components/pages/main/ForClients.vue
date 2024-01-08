@@ -1,19 +1,3 @@
-<template>
-  <Section padding="large">
-    <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-12 max-lg:justify-center">
-      <CardsDescription
-        section-title="Для наших клиентов"
-        title="Your Benefits"
-        text="Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt."
-      />
-      <div class="grid md:grid-cols-2 md:grid-rows-2 lg:col-span-2 max-md:space-y-8 md:gap-10">
-        <CardsBenefitsList :benefitList="benefitData" />
-      </div>
-    </div>
-    <img class="absolute -top-[30px] left-0" src="/images/shapes/home-shape-03.svg" width="540" height="800" loading="lazy" />
-  </Section>
-</template>
-
 <script setup lang="ts">
 const benefitData = [
   {
@@ -35,4 +19,18 @@ const benefitData = [
 ]
 </script>
 
-<style lang="scss"></style>
+<template>
+  <Section padding="large">
+    <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-12 max-lg:justify-center">
+      <CardsDescription
+        section-title="Для наших клиентов"
+        title="Your Benefits"
+        text="Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt."
+      />
+      <div class="grid md:grid-cols-2 md:grid-rows-2 lg:col-span-2 max-md:space-y-8 md:gap-10">
+        <CardsBenefitsList :benefitList="benefitData" />
+      </div>
+    </div>
+    <ImagesShape shape-title="home-shape-03" wrap-class="absolute -top-[30px] left-0" width="540" height="800" loading="lazy" />
+  </Section>
+</template>

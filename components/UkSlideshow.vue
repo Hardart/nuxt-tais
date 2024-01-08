@@ -5,7 +5,7 @@
     <div class="relative" tabindex="-1">
       <ul class="uk-slideshow-items relative m-0 p-0 overflow-hidden touch-pan-y">
         <li v-for="i in 4" class="absolute inset-0 overflow-hidden will-change-transform [&:not(.uk-active)]:hidden">
-          <img :src="`images/gallery/gallery-0${i + 1}.webp`" alt="" uk-cover />
+          <img :src="`/images/gallery/gallery-0${i + 1}.webp`" alt="" uk-cover />
         </li>
       </ul>
 

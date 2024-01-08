@@ -20,5 +20,3 @@
     </div>
   </Section>
 </template>
-
-<style></style>

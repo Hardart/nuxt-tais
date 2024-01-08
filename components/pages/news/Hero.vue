@@ -1,14 +1,9 @@
-<script setup lang="ts">
-const shape1 = '/images/shapes/hero-shape-01.svg'
-const shape2 = '/images/shapes/hero-shape-02.svg'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <Section no-container padding="none" class="py-8 max-xl:pb-0">
     <div class="flex items-center px-10 xl:space-x-10">
-      <div class="flex-1 max-xl:hidden">
-        <img :src="shape1" width="750" height="600" />
-      </div>
+      <ImagesShape shapeTitle="hero-shape-01" width="750" height="600" />
       <div class="text-center w-full xl:w-2/5 space-y-4 lg:space-y-6 xl:space-y-8">
         <CardsDescriptionSection text="наш блог" />
         <CardsDescriptionTitle title="Новости и советы" class="font-semibold" size="h2" />
@@ -16,11 +11,7 @@ const shape2 = '/images/shapes/hero-shape-02.svg'
           Elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Enim ad minim veniam quis.
         </p>
       </div>
-      <div class="flex-1 max-xl:hidden">
-        <img :src="shape2" width="750" height="600" />
-      </div>
+      <ImagesShape shapeTitle="hero-shape-02" width="750" height="600" />
     </div>
   </Section>
 </template>
-
-<style></style>

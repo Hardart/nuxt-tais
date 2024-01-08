@@ -13,7 +13,7 @@
       </a>
     </div>
     <div>
-      <a class="uk-inline" href="images/home-about-03.jpg">
+      <a class="uk-inline" href="/images/home-about-03.jpg">
         <img src="/images/home-about-03.jpg" width="500" height="500" />
       </a>
     </div>

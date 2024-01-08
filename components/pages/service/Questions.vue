@@ -1,6 +1,6 @@
 <template>
   <Section padding="large">
-    <img class="absolute -top-[30px] left-0" src="/images/shapes/home-shape-03.svg" width="540" height="800" loading="lazy" />
+    <ImagesShape shape-title="home-shape-03" wrap-class="absolute -top-[30px] left-0" width="540" height="800" loading="lazy" />
     <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-12 max-lg:justify-center lg:space-x-5">
       <CardsDescription class="lg:max-w-xs" section-title="FREQUENTLY ASKED QUESTIONS" title="You have a question? We have an answer." />
       <UkAccordion class="lg:col-span-2" :items="items" />

@@ -142,5 +142,3 @@ function sliceNews() {
     <HdrtPagination v-model:page.number="page" :total="news.length" :per-page="perPage" />
   </Section>
 </template>
-
-<style></style>

@@ -7,5 +7,3 @@
     <p class="text-zinc-700 font-light">ул. Мира, д. 11</p>
   </div>
 </template>
-
-<style></style>

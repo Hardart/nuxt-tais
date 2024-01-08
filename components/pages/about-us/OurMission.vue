@@ -1,17 +1,3 @@
-<template>
-  <Section padding="large">
-    <img class="absolute -top-[30px] left-0" src="/images/shapes/home-shape-03.svg" width="540" height="800" loading="lazy" />
-    <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-12 max-lg:justify-center">
-      <div class="lg:max-w-xs">
-        <CardsDescription section-title="почему выбирают нас" title="We Are Union Dental, and Your Smile Is Our Mission" />
-      </div>
-      <div class="grid md:grid-cols-2 md:grid-rows-2 lg:col-span-2 max-md:space-y-8 md:gap-10">
-        <CardsBenefitsList :benefitList="benefitData" />
-      </div>
-    </div>
-  </Section>
-</template>
-
 <script setup lang="ts">
 const benefitData = [
   {
@@ -33,4 +19,16 @@ const benefitData = [
 ]
 </script>
 
-<style lang="scss"></style>
+<template>
+  <Section padding="large">
+    <ImagesShape shape-title="home-shape-03" wrap-class="absolute -top-[30px] left-0" width="540" height="800" loading="lazy" />
+    <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-12 max-lg:justify-center">
+      <div class="lg:max-w-xs">
+        <CardsDescription section-title="почему выбирают нас" title="We Are Union Dental, and Your Smile Is Our Mission" />
+      </div>
+      <div class="grid md:grid-cols-2 md:grid-rows-2 lg:col-span-2 max-md:space-y-8 md:gap-10">
+        <CardsBenefitsList :benefitList="benefitData" />
+      </div>
+    </div>
+  </Section>
+</template>

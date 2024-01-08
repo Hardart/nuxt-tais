@@ -7,5 +7,3 @@
     <p class="text-zinc-700 font-light">Сб-Вс: выходные</p>
   </div>
 </template>
-
-<style></style>

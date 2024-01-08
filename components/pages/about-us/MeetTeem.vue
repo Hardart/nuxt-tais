@@ -56,5 +56,3 @@ const team = [
     </div>
   </Section>
 </template>
-
-<style></style>

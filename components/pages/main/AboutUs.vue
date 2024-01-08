@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const gridImages = ['home-about-01.jpg', 'home-about-02.jpg', 'home-about-03.jpg', 'home-about-04.jpg', 'home-about-05.jpg']
+</script>
+
 <template>
   <Section padding="large">
     <div class="grid grid-cols-1 lg:grid-cols-3 max-lg:space-y-8">
@@ -14,9 +18,3 @@
     <ImagesGrid :images="gridImages" />
   </Section>
 </template>
-
-<script setup lang="ts">
-const gridImages = ['home-about-01.jpg', 'home-about-02.jpg', 'home-about-03.jpg', 'home-about-04.jpg', 'home-about-05.jpg']
-</script>
-
-<style lang="scss"></style>

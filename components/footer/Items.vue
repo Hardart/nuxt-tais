@@ -1,3 +1,4 @@
+<script setup lang="ts"></script>
 <template>
   <Section padding="large" class="!pb-0">
     <div class="grid sm:grid-cols-3 lg:grid-cols-4 lg:grid-rows-2 max-md:text-sm gap-6 lg:gap-10 max-lg:text-center max-lg:text-sm">
@@ -17,7 +18,3 @@
     </div>
   </Section>
 </template>
-
-<script setup lang="ts"></script>
-
-<style lang="scss"></style>

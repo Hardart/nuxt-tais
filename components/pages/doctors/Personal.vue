@@ -20,5 +20,3 @@ const personal = [
     </div>
   </Section>
 </template>
-
-<style></style>
